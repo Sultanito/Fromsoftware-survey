@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FromSoftware Gamers Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Survey Form</h1>
+    <p>Please fill out our survey for FromSoftware gamers!</p>
+  </header>
+
+  <form id="survey-form">
+    <div class="form-group">
+      <label for="name" id="name-label">Nickname:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="number" id="number-label">How long have you been playing:</label>
+      <input type="number" id="number" name="number" placeholder="Enter a number from 0 to 20" min="0" max="20" required>
+    </div>
+
+    <div class="form-group">
+      <label for="dropdown">Select where you found out about FromSoftware games:</label>
+      <select id="dropdown" name="dropdown">
+        <option value="youtube">Youtube</option>
+        <option value="friend">From a friend</option>
+        <option value="community">Gaming communities</option>
+        <option value="ads">Advertisements</option>
+        <option value="articles">News articles</option>
+      </select>
+    </div>
+
+    <fieldset>
+      <legend>Would you recommend FromSoftware games to a friend?</legend>
+      <div class="radio-group">
+        <label><input type="radio" name="recommendation" value="yes"> Yes</label>
+        <label><input type="radio" name="recommendation" value="no"> No</label>
+        <label><input type="radio" name="recommendation" value="maybe"> Maybe</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Favorite aspect of games:</legend>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="aspect" value="speedrunning"> Speedrunning</label>
+        <label><input type="checkbox" name="aspect" value="lore"> Lore enjoyer</label>
+        <label><input type="checkbox" name="aspect" value="challenge"> Challenge enjoyer</label>
+        <label><input type="checkbox" name="aspect" value="build"> Different build enjoyer</label>
+      </div>
+    </fieldset>
+
+    <div class="form-group">
+      <label for="games">Favorite FromSoftware Games:</label>
+      <select id="games" name="games" multiple>
+        <option value="eldenring">Elden Ring</option>
+        <option value="demonsouls">Demon's Souls</option>
+        <option value="sekiro">Sekiro</option>
+        <option value="darksouls">Dark Souls</option>
+        <option value="bloodborne">Bloodborne</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="comments">Additional comments:</label>
+      <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+    </div>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+
+</body>
+</html>
